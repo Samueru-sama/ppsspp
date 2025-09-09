@@ -26,6 +26,7 @@ wget "$LIB4BN" -O ./lib4bin
 chmod +x ./lib4bin
 xvfb-run -a -- ./lib4bin -p -v -e -s -k \
 	../build/PPSSPPSDL \
+	"$SYS_LIB_DIR"/libedit.so* \
 	"$SYS_LIB_DIR"/libSDL* \
 	"$SYS_LIB_DIR"/libEGL* \
 	"$SYS_LIB_DIR"/libGL* \
